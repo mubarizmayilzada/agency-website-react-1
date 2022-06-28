@@ -12,10 +12,9 @@ import {
 } from './InfoSection.elements';
 import {Container,Button} from '../../globalStyles'; 
 import { Link } from 'react-router-dom';
-import img1 from '../../images/profile.jpg';
+// import img from '../../images/svg-1.svg';
 
-
-const InfoSection = ({lightBg,imgStart,lightTopLine,lightTextDesc,buttonLabel,description,headline,lightText,topLine,primary,img,alt,start}) => {
+const InfoSection = ({img,lightBg,imgStart,lightTopLine,lightTextDesc,buttonLabel,description,headline,lightText,topLine,primary,alt,start}) => {
   return (
     <>
         <InfoSec lightBg={lightBg}>
@@ -36,7 +35,7 @@ const InfoSection = ({lightBg,imgStart,lightTopLine,lightTextDesc,buttonLabel,de
                 <InfoColumn>
                   <ImgWrapper start={start}>
                     {/* //image meselesine bax */}
-                    <Img src={img1} alt={alt} />
+                    <Img src={img} alt={alt} />
                   </ImgWrapper>
                 </InfoColumn>
               </InfoRow>
