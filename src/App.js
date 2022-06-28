@@ -1,7 +1,7 @@
 import React from 'react';
 import GlobalStyle from './globalStyles';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Navbar } from './components';
+import { InfoSection, Navbar } from './components';
 import Home from './pages/HomePage/Home';
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
       <GlobalStyle/>
       <Navbar/>
       <Routes>
-        <Route path='/' exact component={Home} />
+        <Route path='/' index element={<Home />} />
       </Routes>
     </Router>
   );
